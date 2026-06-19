@@ -11,11 +11,6 @@ RakhtSetu is a blood donation & emergency blood request web application. Users c
 - **Hospital Dashboard**: Manage blood inventory and incoming requests
 - **Alerts & SOS History**
 
-## Project Structure
-
-- `backend/` — Node.js (Express) API
-- `frontend/` — React + Vite frontend
-
 ## Local Setup
 
 ### 1) Backend
@@ -40,16 +35,22 @@ Frontend runs on **http://localhost:3000**.
 
 > Vite is configured to proxy `/api` to `http://localhost:5000`.
 
-## Environment Variables
+## Authentication (No API Keys)
 
-Backend uses the following optional variables:
+This project does **not** use any external API key.
 
-- `PORT` — API port (default: `5000`)
-- `JWT_SECRET` — JWT secret (default: `rakhtsetu-secret-key-2026`)
+Authentication is done via **JWT**:
+- Frontend stores `token` in `localStorage` after login
+- Requests include header: `Authorization: Bearer <token>`
 
-## API Health
+Your backend supports an optional env var:
+- `JWT_SECRET` (if not set, it falls back to a default value in code)
 
-- `GET /api/health` — health check
+## API
+
+- `GET /api/health` (health check)
+
+> Most other endpoints are under `/api/*` and require a valid JWT.
 
 ## Deployment Notes
 
@@ -58,7 +59,7 @@ For live deployment, ensure:
 - Backend is hosted and accessible publicly
 - Frontend is built and served
 - CORS is configured properly
-- JWT secret is set in production
+- Set `JWT_SECRET` in your backend hosting environment
 
 ## Demo Users (Seeded)
 
@@ -69,8 +70,4 @@ On startup the backend seeds demo users (if no data exists), including:
 - `hospital@demo.com`
 
 Default password in seed: `password123`
-
-## License
-
-Add your license information here.
 
