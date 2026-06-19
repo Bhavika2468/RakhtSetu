@@ -54,6 +54,6 @@ Frontend runs on **http://localhost:3000**.
 
 ---
 
-Made with ❤️ by **Bhavika**.
+Made with ❤️ by **Bhavika**
 
 
