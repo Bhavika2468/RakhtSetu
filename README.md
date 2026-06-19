@@ -32,7 +32,6 @@ RakhtSetu is a blood donation & emergency blood request platform. It helps recei
 
 ## Local Setup ✨
 
-
 ### 1) Backend
 
 ```bash
@@ -55,6 +54,6 @@ Frontend runs on **http://localhost:3000**.
 
 ---
 
-Made with love ❤️ by **Bhavika**.
+Made with ❤️ by **Bhavika**.
 
 
