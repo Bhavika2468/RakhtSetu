@@ -1,18 +1,37 @@
 # RakhtSetu 🩸❤️
 
-RakhtSetu is a blood donation & emergency blood request web application. Users can sign up/login, trigger SOS alerts for urgent blood needs 🚨, and donors/hospitals can manage requests and blood inventory 🏥.
+## 1. Overview
+RakhtSetu is a blood donation & emergency blood request platform. It helps receivers raise urgent SOS requests, notify matching available donors, and enables donors and hospitals to manage blood inventory and requests in one place.
 
+## 2. Key Features
+- 🔐 **Authentication**: Login/Signup + OTP verification + quick-access (demo guest flow)
+- 🚨 **SOS Emergency**: Trigger SOS alerts for urgent blood needs and notify matching donors
+- 🩸 **Blood Requests**: Request blood for a specific blood group and route it to hospitals
+- 🧑‍⚕️ **Donor Dashboard**: Track donations, availability, and alerts
+- 🏥 **Hospital Dashboard**: Update blood inventory and manage incoming requests
+- 🔔 **Alerts & SOS History**: Read alerts and view SOS request history
 
-## Features
+## 3. User Flow
+1) **User signs up / logs in** (or uses quick-access for demo)
+2) **Receiver triggers SOS** with a blood group (and optional location)
+3) Backend finds **matching donors** who are available for that blood group
+4) Donors receive an **emergency alert** and can respond from their dashboard
+5) User can also **request blood**; hospitals can **update inventory** to fulfill requests
 
-- **Authentication**: Login/Signup + OTP verification + quick-access (demo guest flow)
-- **SOS Emergency**: Send an SOS alert to notify matching available donors
-- **Blood Requests**: Request blood for a specific blood group (matched to hospitals)
-- **Donor Dashboard**: View donations, availability, and alerts
-- **Hospital Dashboard**: Manage blood inventory and incoming requests
-- **Alerts & SOS History**
+## 4. Future Roadmap
+- 📍 Real geolocation + distance-based donor prioritization
+- ✅ Donation/collection status workflow (accept/decline/confirm)
+- 📱 Mobile-first refinements & performance improvements
+- 💳 Verification steps for donor eligibility & scheduled eligibility reminders
+- 🌐 Admin panel for analytics and hospital onboarding
+
+## 5. Impact
+- Faster blood matching in emergencies
+- Increased donor responsiveness through availability + alerts
+- Better hospital inventory management to reduce shortage times
 
 ## Local Setup
+
 
 ### 1) Backend
 
