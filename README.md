@@ -1,6 +1,7 @@
-# RakhtSetu
+# RakhtSetu 🩸❤️
 
-RakhtSetu is a blood donation & emergency blood request web application. Users can sign up/login, trigger SOS alerts for urgent blood needs, and donors/hospitals can manage requests and blood inventory.
+RakhtSetu is a blood donation & emergency blood request web application. Users can sign up/login, trigger **SOS alerts** for urgent blood needs 🚨, and donors/hospitals can manage requests and blood inventory 🏥.
+
 
 ## Features
 
@@ -70,4 +71,9 @@ On startup the backend seeds demo users (if no data exists), including:
 - `hospital@demo.com`
 
 Default password in seed: `password123`
+
+---
+
+Made with love ❤️ by **Bhavika**.
+
 
