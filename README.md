@@ -1,6 +1,6 @@
 # RakhtSetu 🩸❤️
 
-RakhtSetu is a blood donation & emergency blood request web application. Users can sign up/login, trigger **SOS alerts** for urgent blood needs 🚨, and donors/hospitals can manage requests and blood inventory 🏥.
+RakhtSetu is a blood donation & emergency blood request web application. Users can sign up/login, trigger SOS alerts for urgent blood needs 🚨, and donors/hospitals can manage requests and blood inventory 🏥.
 
 
 ## Features
@@ -36,22 +36,6 @@ Frontend runs on **http://localhost:3000**.
 
 > Vite is configured to proxy `/api` to `http://localhost:5000`.
 
-## Authentication (No API Keys)
-
-This project does **not** use any external API key.
-
-Authentication is done via **JWT**:
-- Frontend stores `token` in `localStorage` after login
-- Requests include header: `Authorization: Bearer <token>`
-
-Your backend supports an optional env var:
-- `JWT_SECRET` (if not set, it falls back to a default value in code)
-
-## API
-
-- `GET /api/health` (health check)
-
-> Most other endpoints are under `/api/*` and require a valid JWT.
 
 ## Deployment Notes
 
@@ -61,16 +45,6 @@ For live deployment, ensure:
 - Frontend is built and served
 - CORS is configured properly
 - Set `JWT_SECRET` in your backend hosting environment
-
-## Demo Users (Seeded)
-
-On startup the backend seeds demo users (if no data exists), including:
-
-- `donor@demo.com`
-- `user@demo.com`
-- `hospital@demo.com`
-
-Default password in seed: `password123`
 
 ---
 
