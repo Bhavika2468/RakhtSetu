@@ -1,6 +1,6 @@
-# RakhtSetu 🩸❤️
+# RakhtSetu 🩸
 
-## 1. Overview
+## ✨ 1. Overview
 RakhtSetu is a blood donation & emergency blood request platform. It helps receivers raise urgent SOS requests, notify matching available donors, and enables donors and hospitals to manage blood inventory and requests in one place.
 
 ## 2. Key Features
@@ -52,18 +52,6 @@ npm run dev
 ```
 
 Frontend runs on **http://localhost:3000**.
-
-> Vite is configured to proxy `/api` to `http://localhost:5000`.
-
-
-## Deployment Notes
-
-For live deployment, ensure:
-
-- Backend is hosted and accessible publicly
-- Frontend is built and served
-- CORS is configured properly
-- Set `JWT_SECRET` in your backend hosting environment
 
 ---
 
